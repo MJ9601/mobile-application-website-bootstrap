@@ -1,0 +1,53 @@
+
+
+
+
+/* general class */
+.bg-custome-container-gradient-45{
+    background: linear-gradient(to bottom right, #fc3799, #81005b);
+}
+.custome-color-pink{
+    color: #ff00bf !important;
+}
+.bg-custome-gradient-to-top{
+    background: linear-gradient(to bottom, #86025f, #ff0055);
+}
+.custome-transition{
+    transition: all .5s ease-in-out;
+}
+.transfromY{
+ transition: all .4s ease-in-out;
+}
+.transfromY:hover,
+.transfromY:focus{
+    transform: translateY(6px);
+    box-shadow: none !important;
+}
+.custome-nav-link{
+    position: relative;
+    overflow: hidden;
+}
+.custome-nav-link::before{
+    content: "";
+    position: absolute;
+    width: 100%; height: 100%;
+    left: -100%; top: 0%;
+    border-bottom: solid 3px #000;
+    transition: all .5s ease;
+}
+.custome-nav-link:hover::before{
+    left: 0;
+
+}
+
+
+/* spacefic classes */
+
+/* .showCase{
+    height: 80vh;
+} */
+
+.adjusting_div{
+    width: 100%;
+    padding: 4% 0;
+} 
