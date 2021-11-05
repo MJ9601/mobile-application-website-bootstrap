@@ -42,6 +42,12 @@ window.onscroll =  () => {
         }
         
     }
+    if (scroll <= 60) {
+        document.querySelector('.scrollerBtn').classList.add("active")
+        
+    }else{
+        document.querySelector('.scrollerBtn').classList.remove('active')
+    }
 }
 
 
@@ -49,7 +55,7 @@ window.onscroll =  () => {
 async function counterFunc(counter, id){
     for (let index = 0; index <= counter; index+=5) {
         document.querySelector(`#${id}`).innerHTML = `${index}`;
-        await delay(2);
+        await delay(3);
         
     }
 
@@ -61,4 +67,27 @@ function delay(time){
     });
 }
 
+var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop:true,
+    loopFillGroupWithBlank: true,
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+  });
 

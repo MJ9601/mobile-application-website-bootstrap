@@ -1,16 +1,26 @@
 
-
+li{
+    list-style: none;
+}
 
 
 /* general class */
 .bg-custome-container-gradient-45{
     background: linear-gradient(to bottom right, #fc3799, #81005b);
 }
+.bg-custome-container-gradient{
+    background: linear-gradient(to top left, #fc3799, #81005b);
+}
 .custome-color-pink{
     color: #ff00bf !important;
 }
 .bg-custome-gradient-to-top{
     background: linear-gradient(to bottom, #86025f, #ff0055);
+}
+.bg-hover:hover,
+.bg-hover:hover .li-hover{
+    background: linear-gradient(to bottom, #86025f, #ff0055);
+    color: #fff;
 }
 .custome-transition{
     transition: all .5s ease-in-out;
@@ -51,3 +61,79 @@
     width: 100%;
     padding: 4% 0;
 } 
+.zIndex{
+    z-index: 10;
+}
+.custome-position{
+    position: absolute;
+    top: 0; left: 0;
+    height: inherit; width: 100%;
+    z-index: -1;
+}
+.custome-card{
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 0;
+    padding: 0 !important;
+}
+.custome-card:hover{
+    color: #fff;
+    background: linear-gradient(to bottom, #86025f, #ff0055);
+}
+.card-icon{
+    position: absolute;
+    right: 0; top: 0;
+    width: 2rem;
+    height: 2.5rem;
+    margin: 0 !important;
+    border-bottom-left-radius: 1rem;
+}
+
+
+/* swiper class */
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+background-position: center;
+background-size: cover;
+width: 300px;
+height: 500px;
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+height: inherit;
+}
+.rotate90{
+    transform: rotate(45deg);
+}
+.custome-rotation{
+    padding: 13.1px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -5%; right: 86%;
+
+}
+.custome-month{
+    position: absolute;
+    transform: rotate(-90deg);
+    right: 3%; top: 7.1%;
+}
+.scrollerBtn{
+    position: fixed;
+    right: 2rem; bottom: 2rem;
+    
+}
+.scrollerBtn.active{
+    bottom: 120%;
+    transition: all .5 ease-in-out;
+}
